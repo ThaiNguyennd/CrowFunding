@@ -3,15 +3,28 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@hookform/resolvers": "^3.0.1",
     "@reduxjs/toolkit": "^1.9.3",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^14.4.3",
+    "json-server": "^0.17.3",
+    "prop-types": "^15.8.1",
+    "quill-image-uploader": "^1.2.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-error-boundary": "^4.0.3",
+    "react-hook-form": "^7.43.9",
+    "react-quill": "^2.0.0",
     "react-redux": "^8.0.5",
+    "react-router-dom": "^6.10.0",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "redux-logger": "^3.0.6",
+    "redux-saga": "^1.2.3",
+    "sass": "^1.61.0",
+    "uuid": "^9.0.0",
+    "web-vitals": "^2.1.4",
+    "yup": "^1.0.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -36,5 +49,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.1"
   }
 }
