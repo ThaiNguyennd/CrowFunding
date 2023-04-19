@@ -23,7 +23,7 @@ const Input = ({
         id={name}
         placeholder={placeholder}
         type={type}
-        className={`w-full px-6 py-4 text-sm font-semibold lg:font-semibold k  rounded-xl outline-none text-text1 placeholder:text-text4 placeholder:font-normal dark:text-white  dark:bg-darksecondary ${
+        className={`w-full px-6 py-4 text-sm font-semibold lg:font-semibold k  rounded-xl outline-none text-text1 placeholder:text-text4 placeholder:font-normal dark:text-white  dark:bg-softdark   ${
           erros ? "border border-erros" : "border border-strock"
         }`}
         {...field}

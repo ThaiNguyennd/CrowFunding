@@ -1,12 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import DashBoardSearch from "./DashBoardSearch";
 import Button from "../../components/button/Button";
 import DashBoardFund from "./DashBoardFund";
 
 const DashBoardHeader = () => {
   return (
-    <div className="flex items-center justify-between mb-8 " >
+    <div className="flex items-center justify-between mb-8 ">
       <div className="flex items-center flex-1 gap-x-10">
         <Link to="/" className="inline-block">
           <img src="/Logo.png " alt="crowfunding-app" />

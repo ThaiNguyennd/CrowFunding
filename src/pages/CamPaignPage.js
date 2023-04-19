@@ -41,7 +41,7 @@ const CamPaignPage = () => {
             </span>
           </div>
         </div>
-    <NavLink to="/start-campaign">
+        <NavLink to="/start-campaign">
           <Button className="px-8 py-3 bg-secondary !text-secondary bg-opacity-10">
             Create campaign
           </Button>

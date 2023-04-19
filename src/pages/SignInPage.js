@@ -11,6 +11,8 @@ import { Input } from "../components/input";
 import useToogleValue from "../hooks/useToogleValue";
 import ToogleEyes from "../components/toogle/ToogleEyes";
 import Button from "../components/button/Button";
+import { useDispatch } from "react-redux";
+import { authLogin } from "../store/auth/auth-slice";
 
 const schema = yup.object({
   name: yup.string().required("This field is required"),
@@ -32,6 +34,10 @@ const SignInPage = () => {
     mode: "onChange",
     resolver: yupResolver(schema),
   });
+  const dispatch = useDispatch();
+  const handleSignIn = (values) => {
+    dispatch(authLogin(values));
+  };
   const [showPassword, setShowPassword] = useState();
   const handleTooglePassword = () => {
     setShowPassword(!showPassword);
@@ -45,7 +51,7 @@ const SignInPage = () => {
         </Link>
       </p>
       <ButtonGoogle text="Sign in with google"></ButtonGoogle>
-      <form>
+      <form onSubmit={handleSubmit(handleSignIn)}>
         <Field>
           <Label htmlFor="email">Email *</Label>
           <Input
@@ -72,7 +78,9 @@ const SignInPage = () => {
           </Input>
         </Field>
         <div className="inline-block float-right my-2 cursor-pointer">
-          <span className="font-medium my-3  text-primary">Forgot password</span>
+          <span className="font-medium my-3  text-primary">
+            Forgot password
+          </span>
         </div>
         <Button type="submit" className="bg-primary">
           Create my account

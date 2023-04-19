@@ -10,7 +10,7 @@ const Textarea = (props) => {
   });
   return (
     <textarea
-      className="w-full px-6 py-4 text-sm font-medium bg-transparent border rounded-xl placeholder:text-text4 dark:placeholder:text-text2 dark:text-white resize-none min-h-[140px] outline-none"
+      className="w-full px-6 py-4 text-sm font-medium bg-transparent border rounded-xl placeholder:text-text4 dark:placeholder:text-text2 dark:text-white resize-none min-h-[140px] outline-none border-strock"
       placeholder={placeholder}
       {...field}
       {...rest}
